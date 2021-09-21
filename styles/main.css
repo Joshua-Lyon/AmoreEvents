@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&display=swap');
+
+:root{
+    --background-color: black;
+    --primary-color: white;
+    --accent-color: rgb(250, 209, 50);
+}
+
+body{
+    font-family: RaleWay;
+    background-color: var(--background-color);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: auto 1em;
+}
+
+nav a{
+    color: var(--primary-color);
+    position: relative;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 1em;
+}
+
+nav a::after{
+    content: "";
+    left: 50%;
+    background-color: var(--accent-color);
+    width:0;
+    height: 0.1em;
+    display: block;
+    position: absolute;
+    transition-property: width, left;
+    transition-duration: 0.1s;
+}
+
+nav a:hover::after{
+    width:100%;
+    left: 0;
+}
+
+nav a:hover{
+    color: var(--accent-color);
+}
