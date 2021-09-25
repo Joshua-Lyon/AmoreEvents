@@ -3,18 +3,22 @@
 :root{
     --background-color: black;
     --primary-color: white;
-    --accent-color: rgb(250, 209, 50);
+    /* --accent-color: rgb(250, 209, 50); */
+    --accent-color: rgb(255, 208, 0);
 }
 
 body{
     font-family: RaleWay;
     background-color: var(--background-color);
+    color: var(--primary-color);
 }
 
 nav{
     display: flex;
     justify-content: space-between;
     margin: auto 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 nav a{
@@ -22,7 +26,6 @@ nav a{
     position: relative;
     text-decoration: none;
     font-weight: 500;
-    margin-top: 1em;
 }
 
 nav a::after{
@@ -37,14 +40,62 @@ nav a::after{
     transition-duration: 0.1s;
 }
 
-nav a:hover::after{
+nav a:hover::after,
+nav a.active::after{
     width:100%;
     left: 0;
 }
 
-nav a:hover{
+nav a:hover,
+nav a.active{
     color: var(--accent-color);
 }
+
 .test{
     display: block;
+}
+
+#social-media-container{
+    display: flex;
+    justify-content: center;
+}
+
+#social-media-container a{
+    margin: 0.7em;
+    font-size: 2em;
+    background-color: var(--accent-color);
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    color: var(--background-color);
+    transition-property: height, width;
+    transition-duration: 0.3s;
+    text-decoration: none;
+}
+
+#social-media-container a:hover{
+    
+    color: var(--primary-color);
+    height: 2.5em;
+    width: 2.5em;
+}
+
+#hero-title{
+    border: var(--primary-color) 0.4rem solid;
+    padding: 1em 8em;
+    position: absolute;
+    text-align: center;
+}
+#hero-title h1{
+    color: var(--accent-color);
+    font-size: 3em;
+    letter-spacing: 0.1em;
+    word-spacing: 0.5em;
+}
+
+#hero-title div{
+    font-size: 2em;
+    font-weight: 600;
 }
