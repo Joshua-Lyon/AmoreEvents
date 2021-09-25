@@ -15,7 +15,7 @@ body{
 
 nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: auto 1em;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -99,3 +99,25 @@ nav a.active{
     font-size: 2em;
     font-weight: 600;
 }
+
+#book-now {
+    position: absolute;
+    bottom: 10%;
+    color: var(--background-color);
+    background-color: var(--accent-color);
+    font-weight: bold;
+    font-size: 2em;
+    border: var(--accent-color) 0.2em solid;
+    padding: 0.5em;
+    border-radius: 100vw;
+    transition-property: padding;
+    transition-duration: 0.2s;
+  }
+
+  #book-now:hover {
+      /* border-color: var(--primary-color);
+      background-color: var(--primary-color); */
+      color: var(--primary-color);
+      padding: 0.8em;
+  }
+  
