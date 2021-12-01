@@ -16,6 +16,8 @@ body{
 
 p {
     text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 h2 {
@@ -23,6 +25,16 @@ h2 {
     text-align: center;
 }
 
+h3 {
+    color: var(--header-color);
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+h3::before {
+    content: "•";
+    
+}
 a {
     cursor: pointer;
 }
@@ -133,4 +145,6 @@ nav a.active{
   
   .testimonial {
       color: rgb(251, 255, 40);
+      margin-left: 5%;
+      margin-right: 5%;
   }
