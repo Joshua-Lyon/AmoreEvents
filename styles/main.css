@@ -5,6 +5,7 @@
     --primary-color: white;
     /* --accent-color: rgb(250, 209, 50); */
     --accent-color: rgb(255, 208, 0);
+    --header-color: rgb(255, 184, 30);
 }
 
 body{
@@ -13,8 +14,22 @@ body{
     color: var(--primary-color);
 }
 
+p {
+    text-align: center;
+}
+
+h2 {
+    color: var(--header-color);
+    text-align: center;
+}
+
 a {
     cursor: pointer;
+}
+
+hr {
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 nav{
@@ -53,10 +68,6 @@ nav a.active::after{
 nav a:hover,
 nav a.active{
     color: var(--accent-color);
-}
-
-.test{
-    display: block;
 }
 
 #social-media-container{
@@ -99,11 +110,6 @@ nav a.active{
     word-spacing: 0.5em;
 }
 
-#hero-title div{
-    font-size: 2em;
-    font-weight: 600;
-}
-
 #book-now {
     position: absolute;
     bottom: 10%;
@@ -125,3 +131,6 @@ nav a.active{
       padding: 0.8em;
   }
   
+  .testimonial {
+      color: rgb(251, 255, 40);
+  }
