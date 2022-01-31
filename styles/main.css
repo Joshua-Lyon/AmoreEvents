@@ -148,10 +148,11 @@ nav a.active{
       color: var(--primary-color);
       margin-bottom: 2em;
       position: relative;
+      font-size: 1rem;
   }
 
   .testimonial>:first-child{
-    margin-bottom: 1em;
+    margin-bottom: .5em;
   }
   .testimonial>:first-child::before{
       font-size: 2em;
@@ -187,10 +188,17 @@ nav a.active{
   .content-container{
       display: grid;
       grid-template-columns: 3fr 1fr;
-      margin-left: 5%;
-      margin-right: 5%;
+      width: 1100px;
+      max-width: 100%;
+      min-width: 90%;
+      margin: auto;
   }
 
   .content-container > div{
       padding: 1em;
+  }
+
+  .about-us{
+      
+    line-height: 1.5em;
   }
