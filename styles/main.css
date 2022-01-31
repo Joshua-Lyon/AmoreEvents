@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&display=swap');
 
 :root{
-    --background-color: black;
+    --background-color: #1f1f1f;
     --primary-color: white;
     /* --accent-color: rgb(250, 209, 50); */
     --accent-color: rgb(255, 208, 0);
