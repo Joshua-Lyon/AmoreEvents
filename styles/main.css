@@ -85,6 +85,8 @@ nav a.active{
 #social-media-container{
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 7em;
 }
 
 #social-media-container a{
@@ -111,9 +113,9 @@ nav a.active{
 
 #hero-title{
     border: var(--primary-color) 0.4rem solid;
-    padding: 1em 8em;
-    position: absolute;
+    padding: 1em 1em;
     text-align: center;
+    margin-top: 10em;
 }
 #hero-title h1{
     color: var(--accent-color);
@@ -123,8 +125,8 @@ nav a.active{
 }
 
 #book-now {
-    position: absolute;
-    bottom: 10%;
+    text-decoration: none;
+    display: block;
     color: var(--background-color);
     background-color: var(--accent-color);
     font-weight: bold;
@@ -132,15 +134,17 @@ nav a.active{
     border: var(--accent-color) 0.2em solid;
     padding: 0.5em;
     border-radius: 100vw;
-    transition-property: padding;
+    transition-property: box-shadow;
     transition-duration: 0.2s;
+    margin: 5em;
+    box-shadow: 0 0 0 0 var(--accent-color);
   }
 
   #book-now:hover {
       /* border-color: var(--primary-color);
       background-color: var(--primary-color); */
       color: var(--primary-color);
-      padding: 0.8em;
+      box-shadow: 0 0 0 0.2em var(--accent-color);
   }
   
   .testimonial {
