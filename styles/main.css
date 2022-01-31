@@ -12,12 +12,11 @@ body{
     font-family: RaleWay;
     background-color: var(--background-color);
     color: var(--primary-color);
+    font-size: 1.1em;
 }
 
 p {
     text-align: center;
-    margin-left: 5%;
-    margin-right: 5%;
 }
 
 h2 {
@@ -27,8 +26,6 @@ h2 {
 
 h3 {
     color: var(--header-color);
-    margin-left: 5%;
-    margin-right: 5%;
 }
 
 h3::before {
@@ -148,7 +145,52 @@ nav a.active{
   }
   
   .testimonial {
-      color: rgb(251, 255, 40);
+      color: var(--primary-color);
+      margin-bottom: 2em;
+      position: relative;
+  }
+
+  .testimonial>:first-child{
+    margin-bottom: 1em;
+  }
+  .testimonial>:first-child::before{
+      font-size: 2em;
+      line-height: 0.5em;
+      bottom: -0.2em;
+      position: relative;
+      content: "\"";
+      color: var(--accent-color)
+  }
+  .testimonial>:first-child::after{
+      font-size: 2em;
+      line-height: 0.5em;
+      bottom: -0.2em;
+      position: relative;
+      content: "\"";
+      color: var(--accent-color)
+  }
+
+  .testimonial>:last-child{
+    color: var(--accent-color);
+  }
+
+  .testimonial>:last-child::before{
+      content: "- ";
+      color: var(--primary-color);
+      margin-left: 1em;
+  }
+  .testimonials{
+      border-left: white 2px solid;
+      height: min-content;
+  }
+
+  .content-container{
+      display: grid;
+      grid-template-columns: 3fr 1fr;
       margin-left: 5%;
       margin-right: 5%;
+  }
+
+  .content-container > div{
+      padding: 1em;
   }
