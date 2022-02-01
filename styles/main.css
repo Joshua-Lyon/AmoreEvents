@@ -37,6 +37,10 @@ a {
     text-decoration: none;
 }
 
+a:hover{
+    text-decoration: none;
+}
+
 hr {
     border-style: inset;
     border: solid 1px;
@@ -175,7 +179,6 @@ nav a.active{
       color: var(--primary-color);
       margin-bottom: 2em;
       position: relative;
-      font-size: 1rem;
   }
 
   .testimonial>:first-child{
@@ -229,6 +232,9 @@ nav a.active{
       
     line-height: 1.5em;
   }
+  #testimonial-hr{
+    display: none;
+}
 
   @media screen and (max-width: 1100px) {
       .content-container{
@@ -240,4 +246,11 @@ nav a.active{
           height: 40vmax;
       }
 
+      .testimonials {
+          border: none;
+      }
+
+      #testimonial-hr{
+          display: block;
+      }
   }
