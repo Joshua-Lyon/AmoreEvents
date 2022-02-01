@@ -76,8 +76,7 @@ nav a::after{
     transition-duration: 0.1s;
 }
 
-nav a:hover::after,
-nav a.active::after{
+nav a:hover::after{
     width:100%;
     left: 0;
 }
