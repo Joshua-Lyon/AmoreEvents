@@ -37,6 +37,9 @@ a {
 }
 
 hr {
+    border-style: inset;
+    border: solid 1px;
+    background-color: white;
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -110,15 +113,17 @@ nav a.active{
 
 #hero-title{
     border: var(--primary-color) 0.4rem solid;
-    padding: 1em 1em;
+    padding: 1em 2em;
     text-align: center;
     margin-top: 10em;
+    background: rgba(0, 0, 0, 0.6);
 }
 #hero-title h1{
     color: var(--accent-color);
     font-size: 3em;
     letter-spacing: 0.1em;
     word-spacing: 0.5em;
+    font-weight: bold;
 }
 
 #hero-carousel{
