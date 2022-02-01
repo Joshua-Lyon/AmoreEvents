@@ -34,6 +34,7 @@ h3::before {
 }
 a {
     cursor: pointer;
+    text-decoration: none;
 }
 
 hr {
